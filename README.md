@@ -9,8 +9,9 @@
 # serverless
 
 `sls deploy` deploy to AWS
-`sls invoke -f search -l` invoke search function locally via command line. Seems to need `sls deploy` first
-see `https://www.serverless.com/framework/docs/providers/aws/cli-reference/invoke-local/`
+
+`sls invoke -f search -l` invoke search function locally via command line.
+Seems to need `sls deploy` first, see `https://www.serverless.com/framework/docs/providers/aws/cli-reference/invoke-local/`
 
 # serverless offline plugin
 
