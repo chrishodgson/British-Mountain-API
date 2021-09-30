@@ -4,23 +4,32 @@
   "description": "Project Starter for AWS Lambda with typescript using Serverless Framework",
   "main": "handler.js",
   "scripts": {
-    "build": "npm run build-ts && npm run tslint",
+    "build": "npm run build-ts ",
     "build-ts": "tsc --lib es2015,dom,esnext.asynciterable",
     "watch-ts": "tsc -w --lib es2015,dom,esnext.asynciterable",
-    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "tslint:fix": "tslint --fix -c tslint.json -p tsconfig.json",
+    "eslint:fix": "eslint --fix --ignore-path .gitignore '**/*.ts'",
     "test": "jest"
   },
   "author": "Wahyu Sumartha",
   "license": "MIT",
   "dependencies": {
-    "serverless": "^1.27.3"
+    "@types/aws-lambda": "^8.10.83",
+    "reflect-metadata": "^0.1.13",
+    "serverless": "^2.60.0",
+    "serverless-offline": "^8.2.0",
+    "typedsv": "^0.1.0"
   },
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.5",
-    "@types/jest": "^22.2.3",
-    "jest": "^23.0.0",
-    "ts-jest": "^22.4.6",
-    "tslint": "^5.10.0",
-    "typescript": "^2.8.3"
+    "@types/jest": "^27.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jest": "^24.5.0",
+    "jest": "^27.2.2",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.4.3"
   }
 }
